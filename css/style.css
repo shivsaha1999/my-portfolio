@@ -1,18 +1,20 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
+
 /*=============== CSS Variables ===============*/
 :root {
   --header-height: 3.5rem;
 
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
-  /*
-        Purple: hsl(250, 66%, 75%)
-        Blue: hsl(207, 90%, 72%)
-        Pink: hsl(356, 66%, 75%)
-        Teal: hsl(174, 63%, 62%)
-  */
+    /*========== Colors ==========*/
+    /* https://colors.dopely.top/color-pedia */
+    /*Color mode using HSL (hue, saturation, lightness)*/
+    /*
+      Purple: hsl(250, 66%, 75%)
+      Blue: hsl(207, 90%, 72%)
+      Pink: hsl(356, 66%, 75%)
+      Teal: hsl(174, 63%, 62%)
+    */
   --first-hue: 250;
   --sat: 66%;
   --lig: 75%;

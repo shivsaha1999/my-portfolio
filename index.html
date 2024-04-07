@@ -7,9 +7,10 @@
         <!----------------- TITLE ICON / FAVICON ----------------->
         <link rel="shortcut icon" href="images/icon1.png" type="image/x-icon">
 
-        <!----------------- BOXICONS ----------------->
+        <!----------------- BOXICONS/FONT AWESOME ----------------->
         <!-- https://boxicons.com/ -->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://kit.fontawesome.com/b39e6c3b1f.js" crossorigin="anonymous"></script>
 
         <!----------------- SWIPER CSS ----------------->
         <link rel="stylesheet" href="">
@@ -31,31 +32,32 @@
                         <!------ 5 list (home, about, skills, work, contact) ------>
                         <li class="nav__item">
                             <a href="#home" class="nav__link active-link">
-                                <!-- Icon links from website boxicons -->
-                                <i class='bx bx-home-heart'></i>
+                                <!-- Icon links from website boxicons/fontawesom -->
+                                <i class="fa-solid fa-house"></i>
                             </a>
                         </li>
 
                         <li class="nav__item">
                             <a href="#about" class="nav__link">
-                                <i class='bx bx-user' ></i>
+                                <i class="fa-solid fa-info"></i>
                             </a>
                         </li>
                         <li class="nav__item">
                             <a href="#skills" class="nav__link">
-                                <i class='bx bx-book' ></i>
+                                <i class="fas fa-tasks"></i>
                             </a>
                         </li>
 
                         <li class="nav__item">
                             <a href="#work" class="nav__link">
-                                <i class='bx bx-briefcase-alt' ></i>
+                                <i class="fa-solid fa-briefcase"></i>
                             </a>
                         </li>
 
                         <li class="nav__item">
                             <a href="#contact" class="nav__link">
-                                <i class='bx bx-message-square-detail' ></i>
+                                <!-- <i class='bx bx-message-square-detail' ></i> -->
+                                <i class="fa-solid fa-message"></i>
                             </a>
                         </li>
 
@@ -65,14 +67,53 @@
                 <i class='bx bx-moon change-them' id="theme-button" ></i>
                 <i class='bx bx-sun' ></i>
             </nav>
-            
         </header>
+
+
+
 
         <!----------------- MAIN ----------------->
         <main class="main">
             <!----------------- HOME ----------------->
             <section class="home section" id="home">
-                
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <span class="home__greeting">Hello, I'm</span>
+                        <h1 class="home__name">Shivangi Saha</h1>
+                        <h3 class="home__designation">Jr. Software Engineer</h3>
+
+                        <div class="home__button">
+                            <a download="" href="pdf/resume 1.pdf" class="button button--ghost">
+                                Download CV
+                                <i class='bx bxs-download' ></i>
+                            </a> 
+                            <a href="#about" class="button">About me</a>
+                        </div>
+                    </div>
+
+
+                    <div class="home__handle">
+                        <img src="images/ppf2.png" alt="" class="home__image">
+                    </div>
+
+                    <div class="home__social">
+                        <a href="" class="home_social-link">
+                            <!-- <i class='bx bxl-linkedin-square' ></i> -->
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+
+                        <a href="" class="home_social-link">
+                            <!-- <i class='bx bxl-github' ></i>               -->
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+
+                        <a href="" class="home_social-link">
+                            <i class="fa-brands fa-salesforce"></i>               
+                        </a>
+
+                    </div>
+
+                </div>
             </section>
             
             <!----------------- ABOUT ----------------->
@@ -105,6 +146,9 @@
                 
             </section>
         </main>
+
+
+
 
         <!----------------- FOOTER ----------------->
         <footer class="footer">

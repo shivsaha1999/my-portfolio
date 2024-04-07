@@ -15,10 +15,10 @@
       Pink: hsl(356, 66%, 75%)
       Teal: hsl(174, 63%, 62%)
     */
-  --first-hue: 250;
+  --first-hue: 340;
   --sat: 66%;
   --lig: 75%;
-  --second-hue: 219;
+  --second-hue: 339;
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
   --first-color-alt: hsl(var(--first-hue), var(--sat), 71%); /* -4% */
   --title-color: hsl(var(--second-hue), 15%, 95%);
@@ -158,13 +158,80 @@ img {
 }
 
 /*--------------- HEADER & NAV---------------*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* height: var(--header-height);  */
+  background-color: var(--body-color);
+  z-index: var(--z-fixed);
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem; */
+}
 
 
-/* Active link */
+.nav {
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 0 1rem; */
+}
 
+.nav__logo {
+  font-size: var(--h2-font-size);
+  color: var(--first-color);
+  font-weight: var(--font-medium);
+  transition: .4s;
+}
 
-/* Change background header */
+.nav__logo:hover {
+  color: var(--first-color-alt);
+}
 
+.nav__menu {
+  /* display: none; */
+  position: fixed;
+  bottom: 1rem;
+  background-color: hsla(var(--second-hue), 32%, 16%, .8);
+  width: 90%;
+  border-radius: 4rem;
+  padding: 1rem 2.25rem;
+  backdrop-filter: blur(.625rem);
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  /* margin-right: 1rem; */
+}
+
+.nav__link {
+  display: flex;
+  color: var(--text-color);
+  font-size: var(--normal-font-size);
+  padding: .4rem;
+  border-radius: 5rem;
+  /* transition: color 0.3s ease; */
+}
+
+.nav__link:hover {
+  color: var(--first-color);
+}
+
+/* Active Link */
+.active-link {
+  background: linear-gradient(180deg, 
+  hsla(var(--first-hue),var(--sat),var(--lig), 1), 
+  hsla(var(--first-hue),var(--sat),var(--lig), .2));
+  /* color: var(--first-color); */
+  box-shadow: 0 0 16px hsla(var(--first-hue),var(--sat),var(--lig), .4);
+}
 
 /*--------------- HOME ---------------*/
 

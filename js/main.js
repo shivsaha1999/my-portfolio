@@ -1,22 +1,22 @@
-/*=============== CHANGE BACKGROUND HEADER ===============*/
+/*--------------- CHANGE BACKGROUND HEADER ---------------*/
 
 
-/*=============== SERVICES MODAL ===============*/
+/*--------------- SERVICES MODAL ---------------*/
 
 
-/*=============== MIXITUP FILTER PORTFOLIO ===============*/
+/*--------------- MIXITUP FILTER PORTFOLIO ---------------*/
 
 
 /* Link active work */ 
 
 
-/*=============== SWIPER TESTIMONIAL ===============*/
+/*--------------- SWIPER TESTIMONIAL ---------------*/
 
 
-/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+/*--------------- SCROLL SECTIONS ACTIVE LINK ---------------*/
 
 
-/*=============== LIGHT DARK THEME ===============*/ 
+/*--------------- LIGHT DARK THEME ---------------*/ 
 
 
-/*=============== SCROLL REVEAL ANIMATION ===============*/
+/*--------------- SCROLL REVEAL ANIMATION ---------------*/

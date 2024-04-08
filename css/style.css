@@ -172,10 +172,6 @@ img {
   /* height: var(--header-height);  */
   background-color: var(--body-color);
   z-index: var(--z-fixed);
-  /* display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 1rem; */
 }
 
 
@@ -184,11 +180,9 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* padding: 0 1rem; */
 }
 
 .nav__logo {
-  font-size: var(--h2-font-size);
   color: var(--first-color);
   font-weight: var(--font-medium);
   transition: .4s;
@@ -199,31 +193,27 @@ img {
 }
 
 .nav__menu {
-  /* display: none; */
   position: fixed;
   bottom: 1rem;
   background-color: hsla(var(--second-hue), 32%, 16%, .8);
   width: 90%;
   border-radius: 4rem;
   padding: 1rem 2.25rem;
-  backdrop-filter: blur(.625rem);
+  backdrop-filter: blur(.2rem);
 }
 
 .nav__list {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  list-style: none;
-  /* margin-right: 1rem; */
 }
 
 .nav__link {
   display: flex;
   color: var(--text-color);
-  font-size: var(--normal-font-size);
+  font-size: 1.25rem;
   padding: .4rem;
   border-radius: 5rem;
-  /* transition: color 0.3s ease; */
 }
 
 .nav__link:hover {
@@ -257,7 +247,6 @@ img {
 .home__greeting, .home__designation {
   font-size: var(--small-font-size);
   font-weight: var(--font-medium);
-  color: var(--text-color-light);
 }
 
 .home__greeting {
@@ -382,7 +371,26 @@ img {
 }
 
 
+
+
 /*--------------- ABOUT ---------------*/
+.about__container {
+  row-gap: 2.5rem;
+}
+
+.about__image{
+  width: 220px;
+  border-radius: 1.5rem;
+  justify-self: center;
+}
+
+.about__data{
+  text-align: center;
+}
+
+
+
+
 
 
 /*--------------- SKILLS ---------------*/

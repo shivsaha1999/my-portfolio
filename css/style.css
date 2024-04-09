@@ -820,6 +820,60 @@ border-radius: 1.25rem;
 
 
 /*--------------- FOOTER ---------------*/
+.footer{
+  background-color: var(--first-color);
+}
+
+.footer__container{
+  padding: 2rem 0 6rem;
+}
+
+.footer__title, .footer__link{
+  color: var(--body-color);
+}
+
+.footer__title{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.footer__list{
+  display: flex;
+  justify-content: center;
+  column-gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.footer__link:hover{
+  color: var(--body-color);
+}
+
+.footer__social{
+  display: flex;
+  justify-content: center;
+  column-gap: 1.5rem;
+}
+
+.footer__social-link{
+  color: var(--body-color);
+  font-size: 1.25rem;
+  padding: .25rem;
+  font-size: 1rem;
+  display: inline-flex;
+}
+
+.footer__social-link:hover{
+  color: var(--body-color);
+}
+
+.footer__copy{
+  display: block;
+  color: var(--body-color);
+  margin-top: 4.25rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
 
 
 /*--------------- SCROLL BAR ---------------*/

@@ -35,8 +35,6 @@ modalClose.forEach((modalClose) => {
 
 
 
-
-
 /*--------------- MIXITUP FILTER PORTFOLIO ---------------*/
 
 

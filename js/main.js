@@ -59,7 +59,34 @@ linkwork.forEach(j => j.addEventListener('click', activeWork));
 
 
 /*--------------- SWIPER TESTIMONIAL ---------------*/
-
+/* Initialize Swiper */
+let swiperTestimonial = new Swiper(".testimonial_container", {
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        576: {
+          slidesPerView: 2,
+          
+          spaceBetween: 28,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 48,
+        },
+        /*1024: {
+          slidesPerView: 5,
+          spaceBetween: 50,
+        },*/
+    },
+    loop:true,
+    grabCursor: true
+});
 
 /*--------------- SCROLL SECTIONS ACTIVE LINK ---------------*/
 

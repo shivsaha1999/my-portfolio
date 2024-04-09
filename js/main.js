@@ -32,11 +32,20 @@ modalClose.forEach((modalClose) => {
         })
     });
 });
-
+``
 
 
 /*--------------- MIXITUP FILTER PORTFOLIO ---------------*/
-
+let mixerPortfolio = mixitup('.work__container', {
+    selectors: {
+        target: '.work__card'
+    },
+    animation: {
+        duration: 500,
+        effects: 'fade scale',
+        easing: 'ease-out' // Change the easing to 'ease-out'
+    }
+});
 
 /* Link active work */ 
 

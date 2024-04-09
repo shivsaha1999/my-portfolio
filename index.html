@@ -484,14 +484,14 @@
                 <h2 class="section__title">Recent Works</h2>
 
                 <div class="work__filters">
-                    <span class="work__item active-work">All</span>
-                    <span class="work__item">Web</span>
-                    <span class="work__item">Mobile</span>
-                    <span class="work__item">Design</span>
+                    <span class="work__item active-work" data-filter='all'>All</span>
+                    <span class="work__item" data-filter='.web'>Web</span>
+                    <span class="work__item" data-filter='.mobile'>Mobile</span>
+                    <span class="work__item" data-filter='.design'>Design</span>
                 </div>
 
                 <div class="work__container container grid">
-                    <div class="work__card">
+                    <div class="work__card mix web">
                         <img src="images/work1.jpg" alt="" class="work__image">
 
                         <h3 class="work__title">Web Design</h3>
@@ -500,7 +500,7 @@
                         </a>
                     </div>
 
-                    <div class="work__card">
+                    <div class="work__card mix mobile">
                         <img src="images/work5.jpg" alt="" class="work__image">
 
                         <h3 class="work__title">App mobile</h3>
@@ -509,7 +509,7 @@
                         </a>
                     </div>
 
-                    <div class="work__card">
+                    <div class="work__card mix design">
                         <img src="images/work2.jpg" alt="" class="work__image">
 
                         <h3 class="work__title">Brand Design</h3>
@@ -518,7 +518,7 @@
                         </a>
                     </div>
 
-                    <div class="work__card">
+                    <div class="work__card mix web">
                         <img src="images/work3.jpg" alt="" class="work__image">
 
                         <h3 class="work__title">Web Design</h3>
@@ -527,7 +527,7 @@
                         </a>
                     </div>
 
-                    <div class="work__card">
+                    <div class="work__card mix mobile">
                         <img src="images/work4.jpg" alt="" class="work__image">
 
                         <h3 class="work__title">App Mobile</h3>
@@ -566,7 +566,7 @@
         <script src=""></script>
 
         <!----------------- MIXITUP FILTER ----------------->
-        <script src=""></script>
+        <script src="js/mixitup.min.js"></script>
 
         <!----------------- MAIN JS ----------------->
         <script src="js/main.js"></script>

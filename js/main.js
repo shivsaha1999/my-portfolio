@@ -42,12 +42,20 @@ let mixerPortfolio = mixitup('.work__container', {
     },
     animation: {
         duration: 500,
-        effects: 'fade scale',
         easing: 'ease-out' // Change the easing to 'ease-out'
     }
 });
 
 /* Link active work */ 
+const linkwork = document.querySelectorAll('.work__item');
+
+function activeWork(){
+        linkwork.forEach(j => j.classList.remove('active-work'));
+        this.classList.add('active-work');
+}
+
+// Add event listener to each linkwork element to activate the activeWork function on click
+linkwork.forEach(j => j.addEventListener('click', activeWork));
 
 
 /*--------------- SWIPER TESTIMONIAL ---------------*/

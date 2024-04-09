@@ -89,6 +89,35 @@ let swiperTestimonial = new Swiper(".testimonial_container", {
 });
 
 /*--------------- SCROLL SECTIONS ACTIVE LINK ---------------*/
+const sections = document.querySelectorAll('section[id]');
+
+function scrollActive(){
+    const scrollY = window.pageYOffset;
+
+    sections.forEach(current => {
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop - 58;
+        const sectionId = current.getAttribute('id');
+
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight)
+        {
+            document.querySelectorAll('.nav__menu a[href*="' + sectionId + '"]').forEach(link => {
+                link.classList.add('active-link');
+            });
+        }
+        else
+        {
+            document.querySelectorAll('.nav__menu a[href*="' + sectionId + '"]').forEach(link => {
+                link.classList.remove('active-link');
+            });
+        }
+    })
+}
+
+window.addEventListener('scroll', scrollActive);
+
+
+
 
 
 /*--------------- LIGHT DARK THEME ---------------*/ 

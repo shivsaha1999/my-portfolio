@@ -119,6 +119,12 @@ img {
 }
 
 /*--------------- THEME ---------------*/
+.change-theme {
+  color: var(--text-color);
+}
+
+
+
 
 
 /*---------- Variables Dark theme ----------*/
@@ -226,7 +232,7 @@ img {
   /* background: linear-gradient(180deg, 
   hsla(var(--first-hue),var(--sat),var(--lig), 1), 
   hsla(var(--first-hue),var(--sat),var(--lig), .2)); */
-  /* color: var(--first-color); */
+  
   box-shadow: 0 0 30px hsla(var(--first-hue),var(--sat),var(--lig), .5);
 }
 
@@ -877,6 +883,22 @@ border-radius: 1.25rem;
 
 
 /*--------------- SCROLL BAR ---------------*/
+::-webkit-scrollbar{
+  width: .6rem;
+  border-radius: .5rem;
+  background-color: hsl(var(--second-hue), 8%, 38%);
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: hsl(var(--second-hue), 8%, 26%);
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: hsl(var(--second-hue), 8%, 15%);
+}
+
+
+
 
 
 /*--------------- BREAKPOINTS ---------------*/

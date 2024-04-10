@@ -1095,11 +1095,18 @@ border-radius: 1.25rem;
     display: block;
     text-align: center;
   }
-
-
-
-
-
 }
 
+
+@media screen and (min-width: 767px){
+  .contact__container{
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    column-gap: 3rem;
+  }
+}
+
+
+
 /* For large devices */
+

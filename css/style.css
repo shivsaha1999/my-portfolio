@@ -87,7 +87,7 @@ textarea {
 body {
   background-color: var(--body-color);
   color: var(--text-color);
-  transition: .4s; /* for light mode animation */
+  transition: .8s; /* for light mode animation */
 }
 
 h1, h2, h3 {
@@ -119,18 +119,71 @@ img {
 }
 
 /*--------------- THEME ---------------*/
-.change-theme {
-  color: var(--text-color);
+.change-theme{
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.change-theme:hover{
+  color: var(--first-color);
+}
+
+
+
+/*---------- Variables Light theme ----------*/
+body.light-theme{
+  --title-color: hsl(var(--second-hue), 15%, 15%);
+  --text-color: hsl(var(--second-hue), 8%, 35%);
+  --body-color: hsl(var(--second-hue), 100%, 97%);
+  --container-color: white;
+}
+
+/*---------- Color changes in some parts of the website, in light theme ----------*/
+.light-theme .scroll-header{
+  box-shadow: 0 4px 4px hsla(0, 0%, 4%, .1);
+}
+
+.light-theme .nav__menu{
+  background-color: hsla(var(--second-hue), 32%, 90%, .8);
+}
+
+.light-theme .home__social-link{
+  background-color: var(--body-color);
+}
+
+.light-theme .about__box, 
+.light-theme .skills__content, 
+.light-theme .services__card,
+.light-theme .work__card,
+.light-theme .testimonial__card,
+.light-theme .contact__card{
+  box-shadow: 0 2px 8px hsla(var(--second-hue), 48%, 8%, .2);
+}
+
+.light-theme .footer__copy{
+  color: var(--title-color);
+}
+
+.light-theme::-webkit-scrollbar{
+  background-color: hsla(var(--second-hue), 8%,60%);
+}
+
+.light-theme::-webkit-scrollbar-thumb{
+  background-color: hsla(var(--second-hue), 8%, 30%);
+}
+
+.light-theme .bx-sun{
+  color: var(--title-color);
+}
+
+.light-theme .bx-sun:hover{
+  color: var(--first-color);
 }
 
 
 
 
-
-/*---------- Variables Dark theme ----------*/
-
-
-/*---------- Color changes in some parts of the website, in light theme ----------*/
 
 
 /*--------------- REUSABLE CSS CLASSES ---------------*/
@@ -179,6 +232,7 @@ img {
   /* height: var(--header-height);  */
   background-color: var(--body-color);
   z-index: var(--z-fixed);
+  transition: .4s; /* for light mode animation */
 }
 
 
@@ -190,7 +244,7 @@ img {
 }
 
 .nav__logo {
-  color: var(--first-color);
+  color: var(--title-color);
   font-weight: var(--font-medium);
   transition: .4s;
 }
@@ -206,7 +260,8 @@ img {
   width: 90%;
   border-radius: 4rem;
   padding: 1rem 2.25rem;
-  backdrop-filter: blur(.2rem);
+  backdrop-filter: blur(7rem);
+  transition: .8s; /* for light mode animation */
 }
 
 .nav__list {
@@ -232,8 +287,7 @@ img {
   /* background: linear-gradient(180deg, 
   hsla(var(--first-hue),var(--sat),var(--lig), 1), 
   hsla(var(--first-hue),var(--sat),var(--lig), .2)); */
-  
-  box-shadow: 0 0 30px hsla(var(--first-hue),var(--sat),var(--lig), .5);
+  color: var(--first-color);
 }
 
 /* Change backgroud header */
@@ -312,6 +366,9 @@ img {
     display: grid;
     row-gap: 1rem;
 }
+.home-icon{
+  font-size: 1.5rem;
+}
 
 .home__social-link{
     width: max-content;
@@ -325,14 +382,14 @@ img {
 }
 
 .home__social-link:hover{
-    color: var(--title-color);
-    /* background-color: var(--first-color); */
+    color: var(--body-color);
+    background-color: var(--first-color); 
 }
 
 .home__social::after{
   content: '';
-  width: 32px;
-  height: 2px;
+  width: 40px;
+  height: 3px;
   background-color: var(--first-color);
   transform: rotate(90deg) translate(16px, 3px);
 }
@@ -470,6 +527,7 @@ border-radius: 1.25rem;
   display:grid;
   align-content: flex-start;
   row-gap: 1rem;
+  margin: .5rem;
 }
 
 .skills__data{
@@ -903,7 +961,65 @@ border-radius: 1.25rem;
 
 /*--------------- BREAKPOINTS ---------------*/
 /* For small devices */
+@media screen and  (max-width: 320px){
+  .nav__menu{
+    padding: 1rem 1.5rem;
+  }
+  .home__button{
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+  .home__handle{
+    width: 150px;
+    height: 253px;
+  }
 
+  .home__image{
+    width: 150px;
+  }
+
+  .about__info{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skills__box{
+    display: grid;
+    column-gap: 2rem;
+  }
+
+  .skills__name{
+    font-size: var(--small-font-size);
+  }
+
+  .services__container{
+    grid-template-columns: 200px;
+    justify-content: center;
+  }
+
+  .work__filters{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .work__item{
+    font-size: var(--small-font-size);
+  }
+
+  .contact__container{
+    grid-template-columns: 200px;
+    justify-content: center;
+  }
+
+  .contact__info{
+    grid-template-columns: 200px;
+    justify-content: center;
+  }
+
+  .contact__card-info{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
 
 /* For medium devices */
 

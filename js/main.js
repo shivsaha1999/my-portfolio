@@ -121,6 +121,36 @@ window.addEventListener('scroll', scrollActive);
 
 
 /*--------------- LIGHT DARK THEME ---------------*/ 
+const themeButton = document.getElementById('theme-button');
+const lightTheme = 'light-theme';
+const iconTheme = 'bx-sun';
 
+// Previously selected theme (if user selected)
+const selectedTheme = localStorage.getItem('selected-theme');
+const selectedIcon = localStorage.getItem('selected-icon');
+
+// We obtain the current theme that the interface has by validating the dlight-theme class
+const getCurrentTheme = () => document.body.classList.contains(lightTheme) ? 'dark' : 'light';
+const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx-moon' : 'bx-sun';
+
+// We validate if the user previously chose a theme
+if (selectedTheme) {
+    // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
+    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](lightTheme);
+    themeButton.classList[selectedIcon === 'bx-moon' ? 'add' : 'remove'](iconTheme);
+}
+// Function to toggle between dark and light theme
+themeButton.addEventListener('click', () => {
+    // Toggle the dark-theme class on the body element
+    document.body.classList.toggle(lightTheme);
+    // Toggle the icon theme class on the theme button
+    themeButton.classList.toggle(iconTheme);
+    // Save the theme and icon selection to local storage
+    localStorage.setItem('selected-theme', getCurrentTheme());
+    localStorage.setItem('selected-icon', getCurrentIcon());
+});
+
+// Add event listener to the theme button to toggle the theme on click
+themeButton.addEventListener('click', toggleTheme);
 
 /*--------------- SCROLL REVEAL ANIMATION ---------------*/

@@ -58,9 +58,9 @@ function activeWork(){
 linkwork.forEach(j => j.addEventListener('click', activeWork));
 
 
-/*--------------- SWIPER TESTIMONIAL ---------------*/
+/*--------------- SWIPER certification ---------------*/
 /* Initialize Swiper */
-let swiperTestimonial = new Swiper(".testimonial_container", {
+let swipercertification = new Swiper(".certification_container", {
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",

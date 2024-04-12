@@ -1062,7 +1062,7 @@ border-radius: 1.25rem;
 
 /*--------------- BREAKPOINTS ---------------*/
 /* For small devices */
-@media screen and  (max-width: 371px){
+@media screen and  (max-width: 440px){
   .nav__menu{
     padding: 1rem 1.5rem;
   }
@@ -1092,10 +1092,33 @@ border-radius: 1.25rem;
     font-size: var(--small-font-size);
   }
 
-  .services__container{
-    grid-template-columns: 200px;
+  .qualification__container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
     justify-content: center;
   }
+
+  .qualification__content{
+    position: relative;
+  }
+
+  .qualification_title{
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: 2rem;
+  }
+
+  .timeline__item{
+    position: relative;
+    padding-left: 2.5rem;
+  }
+
+  
+  
+
+  
+
 
   .work__filters{
     flex-wrap: wrap;

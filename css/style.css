@@ -1122,6 +1122,11 @@ border-radius: 1.25rem;
     height: 160px;
   }
 
+  .home__handle-image{
+    width: 200px;
+  height: 200px;
+  }
+
   .home__image{
     width: 150px;
   }

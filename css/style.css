@@ -304,11 +304,17 @@ body.light-theme{
 
 
 /*--------------- HOME ---------------*/
+
 .home__container {
   padding-top: 2rem;
   position: relative;
   row-gap: 4.5rem;
-
+  padding-block: 1rem 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
 }
 
 .home__data {
@@ -339,11 +345,29 @@ body.light-theme{
 }
 
 .home__image {
-  width: 160px;
+  width: 150px;
+  /* left: 50%; */
+  transform: translateX(10%);
+  transform: translateY(-10%);
 } 
 
+.home__handle-image{
+  width: 250px;
+  height: 250px;
+  /* background-color: var(--body-color); */
+  border: 8px solid var(--first-color);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition: background-color .4s;
+  background-image: url('images/wave1.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .home__handle {
-  display: flex;
+  /* display: flex;
   width: 160px;
   height: 290px;
   justify-self: center;
@@ -353,7 +377,17 @@ body.light-theme{
   border-radius: 10rem 10rem 1rem 1rem;
   align-items: flex-end;
   justify-content: center;
+  overflow: hidden; */
+  width: 180px;
+  height: 180px;
+  border: 10px solid var(--first-color);
   overflow: hidden;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: flex-end;
+  background: linear-gradient(180deg, 
+              hsla(var(--first-hue),90%,80%), 
+              hsla(var(--first-hue),90%,30%));
 }
 
 .home__button {
@@ -1078,8 +1112,10 @@ border-radius: 1.25rem;
     row-gap: 1rem;
   }
   .home__handle{
-    width: 150px;
-    height: 253px;
+    /* width: 150px;
+    height: 253px; */
+    width: 160px;
+    height: 160px;
   }
 
   .home__image{
@@ -1155,8 +1191,10 @@ border-radius: 1.25rem;
 @media screen and (min-width: 576px){
 
   .home__handle{
-    width: 180px;
-    height: 300px;
+    /* width: 180px;
+    height: 300px; */
+    width: 190px;
+    height: 190px;
   }
 
   .home__image{
@@ -1290,8 +1328,10 @@ border-radius: 1.25rem;
   }
 
   .home__handle{
-    width: 290px;
-    height: 500px;
+    /* width: 290px;
+    height: 500px; */
+    width: 200px;
+    height: 200px;
   }
 
   .home__image{

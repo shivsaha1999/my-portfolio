@@ -7,7 +7,7 @@ This is my personal portfolio project, showcasing my skills, experience, and pro
 - Light/Dark theme toggle
 - Responsive design
 - Project showcase section
-- Contact form
+- Contact Info
 
 ## Installation
 
